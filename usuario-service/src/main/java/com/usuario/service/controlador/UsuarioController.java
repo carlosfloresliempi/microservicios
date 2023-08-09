@@ -49,7 +49,6 @@ class UsuarioController {
         }
         List<Carro> carros = usuarioService.getCarros(usuarioId);
         return  ResponseEntity.ok(carros);
-
     }
 
     @GetMapping("/motos/{usuarioId}")
